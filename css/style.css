@@ -1,0 +1,36 @@
+/*
+colors used:
+Primary Color (LightPurple): #7500CF;
+Secondary Color (DarkPurple): #490082;
+Font (White): #EAEAEA;
+Background (Black): #0F051C;
+*/
+
+
+body {
+  background-color: lightgrey;
+  font-family: 'Nunito',sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.6;
+  color: #EAEAEA;
+}
+h1, h2, h3, h4 {
+  line-height: 1.4;
+}
+h1 {
+  font-size: 2.75em;
+  font-weight: 700;
+}
+h2 {
+  font-size: 2.25em;
+  font-weight: 600;
+}
+h3 {
+  font-size: 1.75em;
+  font-weight: 400;
+}
+h4 {
+  font-size: 1.35em;
+  font-weight: 400;
+}
