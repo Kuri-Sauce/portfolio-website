@@ -5,7 +5,9 @@ Secondary Color (DarkPurple): #490082;
 Font (White): #EAEAEA;
 Background (Black): #0F051C;
 */
-
+* {
+  box-sizing: border-box;
+}
 
 body {
   background-color: #ffffff;
