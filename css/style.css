@@ -8,12 +8,12 @@ Background (Black): #0F051C;
 
 
 body {
-  background-color: lightgrey;
+  background-color: #ffffff;
   font-family: 'Nunito',sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 1.6;
-  color: #EAEAEA;
+  color: #4a4a4a;
 }
 h1, h2, h3, h4 {
   line-height: 1.4;
