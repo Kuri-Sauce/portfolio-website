@@ -4,14 +4,13 @@ Primary Color (LightPurple): #7500CF;
 Secondary Color (DarkPurple): #490082;
 Font (White): #EAEAEA;
 Background (Black): #0F051C;
+
+  font-family: 'Red Hat Display', sans-serif;
 */
-* {
-  box-sizing: border-box;
-}
 
 body {
   background-color: #ffffff;
-  font-family: 'Nunito',sans-serif;
+  font-family: 'Nunito', sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 1.6;
