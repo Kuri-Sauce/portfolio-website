@@ -9,12 +9,12 @@ Background (Black): #0F051C;
 */
 
 body {
-  background-color: #ffffff;
+  background-color: #0F051C;
   font-family: 'Red Hat Display', sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 1.6;
-  color: #4a4a4a;
+  color: #EAEAEA;
 }
 h1, h2, h3, h4 {
   line-height: 1.4;
