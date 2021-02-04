@@ -7,30 +7,36 @@ Background (Black): #0F051C;
 
   font-family: 'Red Hat Display', sans-serif;
 */
-
 body {
   background-color: #0F051C;
-  font-family: 'Red Hat Display', sans-serif;
-  font-size: 16px;
+  font-family: 'Nunito', sans-serif;
+  font-size: 17px;
   font-weight: 400;
   line-height: 1.6;
+  letter-spacing: 0.5px;
   color: #EAEAEA;
 }
+
 h1, h2, h3, h4 {
+  font-family: 'Red Hat Display', sans-serif;
   line-height: 1.4;
 }
+
 h1 {
   font-size: 3.25em;
   font-weight: 500;
 }
+
 h2 {
   font-size: 2.25em;
   font-weight: 400;
 }
+
 h3 {
   font-size: 1.5em;
   font-weight: 400;
 }
+
 h4 {
   font-size: 1.35em;
   font-weight: 500;
@@ -39,3 +45,124 @@ h4 {
 img {
   width: 100%;
 }
+
+a {
+  background-color: #0F051C;
+  color: #EAEAEA;
+  text-decoration: underline;
+}
+
+a:visited {
+  color: #EAEAEA;
+}
+
+a:hover,
+a:focus {
+  background-color: #0F051C;
+  color: #7500CF;
+  text-decoration: underline;
+}
+
+a:active {
+  background-color: #0F051C;
+  color: #490082;
+}
+
+.button {
+  display: inline-block;
+  background-color: #7500CF;
+  color: #EAEAEA;
+  font-weight: 400;
+  padding: 10px;
+  border-radius: 3px;
+  border: 4px solid #490082;
+  transition: 0.2s opacity;
+  text-decoration: none;
+}
+
+.button:hover {
+  color: #EAEAEA;
+  background-color: #490082;
+  text-decoration: none;
+}
+
+.button:active {
+  color: #490082;
+  background-color: #EAEAEA;
+  text-decoration: none;
+}
+
+.button.contact {
+  background-color: #EAEAEA;
+  color: #490082;
+  font-weight: 700;
+  text-transform: uppercase;
+  border: 4px solid #7500CF;
+  text-decoration: none;
+}
+
+.button.contact:hover {
+  background-color: #7500CF;
+  color: #EAEAEA;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.button.contact:active {
+  background-color: #EAEAEA;
+  color: #490082;
+  font-weight: 700;
+  text-transform: uppercase;
+  border: 4px solid #7500CF;
+  text-decoration: none;
+}
+
+#watchguide-main {
+  background-color: #333333;
+  font-family: 'Fira Sans Condensed', sans-serif;
+  font-size: 36px;
+  font-weight: 400;
+  color: Black;
+}
+
+.watchguide.header1{
+  background-color: #333333;
+  font-family: 'Fira Sans Condensed', sans-serif;
+  font-size: 72px;
+  font-weight: 700;
+  letter-spacing: 0.37px;
+  color: #E2AB41;
+}
+
+.watchguide.header2 {
+  background-color: #333333;
+  font-family: 'Fira Sans Condensed', sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  letter-spacing: 0.37px;
+  color: #E2AB41;
+}
+
+.watchguide.header3 {
+  background-color: #333333;
+  font-family: 'Fira Sans Condensed', sans-serif;
+  font-size: 36px;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.watchguide.section.background {
+  background-color: rgba(255, 255, 255, 0.87);
+  color: black;
+}
+
+/*
+colors used:
+Primary Color (LightPurple): #7500CF;
+Secondary Color (DarkPurple): #490082;
+Font (White): #EAEAEA;
+Background (Black): #0F051C;
+
+  font-family: 'Red Hat Display', sans-serif;
+*/
