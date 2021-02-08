@@ -7,6 +7,20 @@ Background (Black): #0F051C;
 
   font-family: 'Red Hat Display', sans-serif;
 */
+* {
+  box-sizing: border-box;
+}
+
+header {
+  background-color: #0F051C;
+  color: #EAEAEA;
+  padding: 10px 0;
+  margin: 10px auto;
+  border-bottom: 3px solid #490082;
+  text-align: center;
+  list-style-type: none;
+}
+
 body {
   background-color: #0F051C;
   font-family: 'Nunito', sans-serif;
@@ -53,6 +67,7 @@ a {
 }
 
 a:visited {
+  background-color: #0F051C;
   color: #EAEAEA;
 }
 
@@ -73,7 +88,7 @@ a:active {
   background-color: #7500CF;
   color: #EAEAEA;
   font-weight: 400;
-  padding: 10px;
+  padding: 10px 20px;
   border-radius: 3px;
   border: 4px solid #490082;
   transition: 0.2s opacity;
@@ -121,41 +136,123 @@ a:active {
 #watchguide-main {
   background-color: #333333;
   font-family: 'Fira Sans Condensed', sans-serif;
-  font-size: 36px;
+  font-size: 16px;
   font-weight: 400;
+  letter-spacing: 0.5px;
   color: Black;
+  max-width: 90%;
+  margin: auto;
 }
 
-.watchguide.header1{
+#watchguide-main h1 {
   background-color: #333333;
   font-family: 'Fira Sans Condensed', sans-serif;
-  font-size: 72px;
+  font-size: 3.8em;
+  font-weight: 700;
+  letter-spacing: 0.374px;
+  color: #E2AB41;
+}
+
+#watchguide-main h2 {
+  background-color: #333333;
+  font-family: 'Fira Sans Condensed', sans-serif;
+  font-size: 2em;
   font-weight: 700;
   letter-spacing: 0.37px;
   color: #E2AB41;
 }
 
-.watchguide.header2 {
+#watchguide-main h3 {
   background-color: #333333;
-  font-family: 'Fira Sans Condensed', sans-serif;
-  font-size: 48px;
-  font-weight: 700;
-  letter-spacing: 0.37px;
-  color: #E2AB41;
-}
-
-.watchguide.header3 {
-  background-color: #333333;
-  font-family: 'Fira Sans Condensed', sans-serif;
-  font-size: 36px;
-  font-weight: 400;
   color: #ffffff;
+  font-size: 1.5em;
 }
 
-.watchguide.section.background {
+.section-light-background {
   background-color: rgba(255, 255, 255, 0.87);
   color: black;
+  padding: 10px;
 }
+
+/* Layout styling */
+.container {
+  padding: 0 15px;
+}
+
+.row {
+  margin: 25px 0;
+  /* 25px top and bottom, 0 left and right */
+}
+
+#work .row {
+  padding-bottom: 25px;
+  border-bottom: 1px solid #4a4a4a
+}
+
+.social-icons {
+  width: 100px;
+}
+
+.project-covers {
+  max-width: 90%;
+}
+
+#watchguide-palette {
+  max-width: 458px;
+  position: static;
+}
+
+#work h3 {
+  text-align: center;
+  /* Centers text */
+}
+
+#work p {
+  text-align: center;
+  /* Centers text */
+}
+
+.logo {
+  max-width: 250px;
+}
+
+nav>ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav>ul>li {
+  display: inline-block;
+}
+
+nav>ul>li>a {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #EAEAEA;
+  background-color: #0F051C;
+  text-decoration: none;
+}
+
+nav>ul>li>a:visited {
+  color: #EAEAEA;
+  background-color: #0F051C;
+  text-decoration: none;
+}
+
+nav>ul>li>a:hover {
+  color: #7500CF;
+  background-color: #0F051C;
+  text-decoration: underline;
+}
+
+nav>ul>li>a:active {
+  color: #490082;
+  background-color: #0F051C;
+  text-decoration: none;
+}
+
+
 
 /*
 colors used:
