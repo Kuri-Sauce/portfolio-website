@@ -90,6 +90,7 @@ a:active {
 }
 
 .button {
+  /* Light purple fill; dark purple border; white font */
   display: inline-block;
   background-color: #7500CF;
   color: #EAEAEA;
@@ -102,15 +103,21 @@ a:active {
 }
 
 .button:hover {
+  /* Dark purple fill; dark purple border; white font */
   color: #EAEAEA;
   background-color: #490082;
   text-decoration: none;
 }
 
 .button:active {
+  /* White fill; dark purple border; Light Purple font */
   color: #490082;
   background-color: #EAEAEA;
   text-decoration: none;
+}
+
+.button:visited {
+  background-color: #490082;
 }
 
 .button.contact {
@@ -153,17 +160,17 @@ a:active {
 #watchguide-main h1 {
   background-color: #333333;
   font-family: 'Fira Sans Condensed', sans-serif;
-  font-size: 3.8em;
+  font-size: 3em;
   font-weight: 700;
   letter-spacing: 0.374px;
   color: #E2AB41;
-  padding: 48px;
+  padding: 16px;
 }
 
 #watchguide-main h2 {
   background-color: #333333;
   font-family: 'Fira Sans Condensed', sans-serif;
-  font-size: 2em;
+  font-size: 1.5em;
   font-weight: 700;
   letter-spacing: 0.37px;
   color: #E2AB41;
@@ -172,7 +179,12 @@ a:active {
 #watchguide-main h3 {
   background-color: #333333;
   color: #ffffff;
-  font-size: 1.5em;
+  font-size: 1.25em;
+}
+
+#watchguide-palette {
+  max-width: 458px;
+  position: static;
 }
 
 .section-light-background {
@@ -192,7 +204,6 @@ a:active {
 }
 
 #hero {
-  background-color: #0F051C;
   color: #EAEAEA;
   padding: 20px 0;
   display: inline-block;
@@ -206,17 +217,16 @@ a:active {
 
 #work .row {
   padding-bottom: 25px;
-  border-bottom: 1px solid #4a4a4a
+  border-bottom: 1px solid rgba(73, 0, 130, 0.70);
 }
 
 #work h3 {
-  text-align: center;
+  text-align: left;
   /* Centers text */
 }
 
 #work p {
-  text-align: center;
-  /* Centers text */
+  text-align: left;
 }
 
 #contact {
@@ -240,7 +250,7 @@ nav>ul>li {
 }
 
 nav>ul>li>a {
-  padding: 0 15px;
+  padding: 0 10px;
   text-transform: uppercase;
   font-weight: 500;
   color: #EAEAEA;
@@ -254,8 +264,7 @@ nav>ul>li>a:visited {
   text-decoration: none;
 }
 
-nav>ul>li>a:hover
-nav>ul>li>a:focus{
+nav>ul>li>a:hover nav>ul>li>a:focus {
   color: #7500CF;
   font-weight: 700;
   background-color: #0F051C;
@@ -276,10 +285,19 @@ nav>ul>li>a:active {
   max-width: 75%;
 }
 
-#watchguide-palette {
-  max-width: 458px;
-  position: static;
+.highlight-main {
+  background-color: blue;
 }
+
+.highlight-header {
+  background-color: green;
+}
+
+.highlight-footer {
+  background-color: red;
+}
+
+
 
 /* ==============================
 Medium devices (640px and larger)
@@ -295,27 +313,80 @@ Medium devices (640px and larger)
     float: right;
     margin-top: 4px;
   }
+
+  .container {
+    width: 640px;
+    margin: 0 auto;
+  }
+
+  h1 {
+    font-size: 3.75em;
+  }
+
+  #hero span {
+    display: block;
+  }
+
+[class*="col-"] {
+  float: left;
+  padding: 10px;
+}
+
+.row::after{
+  content: "";
+  clear: both;
+  display: table;
+}
+
 }
 
 /* ==============================
 Large devices (1024px or larger)
 ================================= */
 @media only screen and (min-width: 1024px) {
+  [class*="col-"] {
+    float: left;
+    padding: 10px;
+  }
+
+  .row::after{
+    content: "";
+    clear: both;
+    display: table;
+  }
 }
 
 /* ==============================
 X-large devices (1440px or larger)
 ================================= */
 @media only screen and (min-width: 1440px) {
+  [class*="col-"] {
+    float: left;
+    padding: 10px;
+  }
+
+  .row::after{
+    content: "";
+    clear: both;
+    display: table;
+  }
 }
 
 /* ==============================
 Extra-large devices (1920px or larger)
 ================================= */
 @media only screen and (min-width: 1920px) {
+  [class*="col-"] {
+    float: left;
+    padding: 10px;
+  }
+
+  .row::after{
+    content: "";
+    clear: both;
+    display: table;
+  }
 }
-
-
 
 /*
 colors used:
