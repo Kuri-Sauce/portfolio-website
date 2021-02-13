@@ -24,7 +24,7 @@ header {
 }
 
 main {
-  padding-top: 160px;
+padding-top: 56px;
 }
 
 body {
@@ -203,16 +203,22 @@ a:active {
   /* 25px top and bottom, 0 left and right */
 }
 
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
 #hero {
   color: #EAEAEA;
   padding: 20px 0;
   display: inline-block;
   width: 100%;
+  margin-top: 120px;
 }
 
 #hero h1 {
   margin: 0;
-  padding: 0.67em 0;
 }
 
 #work .row {
@@ -232,6 +238,14 @@ a:active {
 #contact {
   text-align: center;
   padding-top: 10px;
+}
+
+[class*="col-"] {
+  padding: 10px;
+}
+
+.col-sm-12 {
+  width: 100%;
 }
 
 .logo {
@@ -285,19 +299,17 @@ nav>ul>li>a:active {
   max-width: 75%;
 }
 
-.highlight-main {
+.highlight-blue {
   background-color: blue;
 }
 
-.highlight-header {
+.highlight-green {
   background-color: green;
 }
 
-.highlight-footer {
+.highlight-red {
   background-color: red;
 }
-
-
 
 /* ==============================
 Medium devices (640px and larger)
@@ -319,74 +331,42 @@ Medium devices (640px and larger)
     margin: 0 auto;
   }
 
+  #hero {
+    margin-top: 96px;
+  }
+
   h1 {
-    font-size: 3.75em;
+    font-size: 4em;
   }
 
   #hero span {
     display: block;
   }
 
-[class*="col-"] {
-  float: left;
-  padding: 10px;
-}
+  [class*="col-"] {
+    float: left;
+    padding: 10px;
+  }
 
-.row::after{
-  content: "";
-  clear: both;
-  display: table;
-}
-
+  .col-md-6 {
+    width: 50%;
+  }
 }
 
 /* ==============================
 Large devices (1024px or larger)
 ================================= */
-@media only screen and (min-width: 1024px) {
-  [class*="col-"] {
-    float: left;
-    padding: 10px;
-  }
-
-  .row::after{
-    content: "";
-    clear: both;
-    display: table;
-  }
-}
+@media only screen and (min-width: 1024px) {}
 
 /* ==============================
 X-large devices (1440px or larger)
 ================================= */
-@media only screen and (min-width: 1440px) {
-  [class*="col-"] {
-    float: left;
-    padding: 10px;
-  }
-
-  .row::after{
-    content: "";
-    clear: both;
-    display: table;
-  }
-}
+@media only screen and (min-width: 1440px) {}
 
 /* ==============================
 Extra-large devices (1920px or larger)
 ================================= */
-@media only screen and (min-width: 1920px) {
-  [class*="col-"] {
-    float: left;
-    padding: 10px;
-  }
-
-  .row::after{
-    content: "";
-    clear: both;
-    display: table;
-  }
-}
+@media only screen and (min-width: 1920px) {}
 
 /*
 colors used:
