@@ -24,7 +24,7 @@ header {
 }
 
 main {
-padding-top: 56px;
+  padding-top: 56px;
 }
 
 body {
@@ -104,8 +104,9 @@ a:active {
 
 .button:hover {
   /* Dark purple fill; dark purple border; white font */
+  opacity: 0.8;
   color: #EAEAEA;
-  background-color: #490082;
+  background-color: #7500CF;
   text-decoration: none;
 }
 
@@ -221,6 +222,15 @@ a:active {
   margin: 0;
 }
 
+#hero-index {
+  background-color: #7500CF;
+}
+
+#work h2 {
+  margin-top: 1em;
+  margin-bottom: .5em;
+}
+
 #work .row {
   padding-bottom: 25px;
   border-bottom: 1px solid rgba(73, 0, 130, 0.70);
@@ -228,7 +238,7 @@ a:active {
 
 #work h3 {
   text-align: left;
-  /* Centers text */
+  margin-top: .5em;
 }
 
 #work p {
@@ -311,6 +321,52 @@ nav>ul>li>a:active {
   background-color: red;
 }
 
+.sun {
+  animation: 4s color-change infinite alternate linear;
+}
+
+.cloud-front {
+  animation: 30s cloud-move infinite alternate linear;
+}
+
+.cloud-back {
+  animation: 34s cloud-move-reverse infinite alternate linear;
+}
+
+@keyframes color-change {
+  0% {
+    fill: #edc655
+  }
+
+  50% {
+    fill: #fcffad;
+  }
+
+  100% {
+    fill: #f76414;
+  }
+}
+
+@keyframes cloud-move {
+  from {
+    transform: translate(0, -8px);
+  }
+
+  to {
+    transform: translate(200px, 8px);
+  }
+}
+
+@keyframes cloud-move-reverse {
+  from {
+    transform: translate(446px, 48px);
+  }
+
+  to {
+    transform: translate(100px, 48px);
+  }
+}
+
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
@@ -324,11 +380,6 @@ Medium devices (640px and larger)
     width: auto;
     float: right;
     margin-top: 4px;
-  }
-
-  .container {
-    width: 640px;
-    margin: 0 auto;
   }
 
   #hero {
@@ -345,18 +396,43 @@ Medium devices (640px and larger)
 
   [class*="col-"] {
     float: left;
-    padding: 10px;
   }
 
   .col-md-6 {
     width: 50%;
+  }
+
+  #hero-animation {
+    background-color: #7500CF;
   }
 }
 
 /* ==============================
 Large devices (1024px or larger)
 ================================= */
-@media only screen and (min-width: 1024px) {}
+@media only screen and (min-width: 1024px) {
+  .container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  [class*="col-"] {
+    float: left;
+  }
+
+  .col-lg-7 {
+    width: 60%;
+  }
+
+  .col-lg-5 {
+    width: 40%;
+  }
+
+  #hero-animation {
+    background-color: #7500CF;
+  }
+}
 
 /* ==============================
 X-large devices (1440px or larger)
