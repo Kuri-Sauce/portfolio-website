@@ -335,7 +335,7 @@ nav>ul>li>a:active {
 
 @keyframes color-change {
   0% {
-    fill: #edc655
+    fill: #edc655;
   }
 
   50% {
