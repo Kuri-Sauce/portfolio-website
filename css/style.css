@@ -16,7 +16,6 @@ header {
   color: #EAEAEA;
   padding: 10px 0;
   margin: 0px auto;
-  text-align: center;
   list-style-type: none;
   box-shadow: 0px 4px 5px 0px rgba(73, 0, 130, 0.70);
   position: fixed;
@@ -147,6 +146,25 @@ a:active {
   text-decoration: none;
 }
 
+#myNavtoggle {
+  max-width: 150px;
+}
+
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 2px;
+  font-size: 20px;
+}
+
 #watchguide-main {
   background-color: #333333;
   font-family: 'Fira Sans Condensed', sans-serif;
@@ -269,10 +287,6 @@ nav>ul {
   width: 100%;
 }
 
-nav>ul>li {
-  display: inline-block;
-}
-
 nav>ul>li>a {
   padding: 0 10px;
   text-transform: uppercase;
@@ -376,6 +390,10 @@ Medium devices (640px and larger)
     padding: 20px 0 13px;
   }
 
+  #myNavtoggle {
+    min-width: 641px
+  }
+
   nav {
     width: auto;
     float: right;
@@ -405,6 +423,19 @@ Medium devices (640px and larger)
   #hero-animation {
     background-color: #7500CF;
   }
+
+  nav>ul>li {
+    display: inline-block;
+  }
+
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
+
+  .navtoggle li:last-child {
+  display: none;
+}
+
 }
 
 /* ==============================
