@@ -14,7 +14,7 @@ Background (Black): #0F051C;
 header {
   background-color: #0F051C;
   color: #EAEAEA;
-  padding: 10px 0;
+  padding: 10px 0 4px;
   margin: 0px auto;
   list-style-type: none;
   box-shadow: 0px 4px 5px 0px rgba(73, 0, 130, 0.70);
@@ -146,10 +146,9 @@ a:active {
   text-decoration: none;
 }
 
-#myNavtoggle {
-  max-width: 150px;
-}
+#myNavtoggle {}
 
+/*Why is this here? I am not sure what purpose this currently serves.*/
 .navtoggle li:not(:last-child) {
   display: none;
 }
@@ -163,6 +162,56 @@ a:active {
   right: 0;
   top: 2px;
   font-size: 20px;
+  padding: 0;
+}
+
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
+}
+
+.navtoggle.responsive li {
+  display: block;
+  padding: 10px;
+  border-top: 1px solid rgba(73, 0, 130, 0.70);
+}
+
+.navtoggle.responsive li:last-child {
+  padding: 0 0 10px;
+}
+
+nav>ul {
+  list-style-type: none;
+  margin: 1em 0;
+  padding: 0;
+  text-align: center;
+}
+
+nav>ul>li>a {
+  padding: 0 10px;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #EAEAEA;
+  background-color: #0F051C;
+  text-decoration: none;
+}
+
+nav>ul>li>a:visited {
+  color: #EAEAEA;
+  background-color: #0F051C;
+  text-decoration: none;
+}
+
+nav>ul>li>a:hover nav>ul>li>a:focus {
+  color: #7500CF;
+  font-weight: 700;
+  background-color: #0F051C;
+  text-decoration: underline;
+}
+
+nav>ul>li>a:active {
+  color: #490082;
+  background-color: #0F051C;
+  text-decoration: none;
 }
 
 #watchguide-main {
@@ -230,10 +279,9 @@ a:active {
 
 #hero {
   color: #EAEAEA;
-  padding: 20px 0;
+  padding: 8px 0;
   display: inline-block;
   width: 100%;
-  margin-top: 120px;
 }
 
 #hero h1 {
@@ -263,7 +311,7 @@ a:active {
   text-align: left;
 }
 
-#contact {
+#Contact {
   text-align: center;
   padding-top: 10px;
 }
@@ -277,42 +325,40 @@ a:active {
 }
 
 .logo {
-  max-width: 250px;
+  max-width: 150px;
 }
 
-nav>ul {
-  list-style-type: none;
-  padding: 0;
-  display: inline-block;
-  width: 100%;
+.logo-animation {
+  max-width: 160px;
+  position: relative;
+  -webkit-animation: diagonal 2s infinite;
+  -moz-animation: diagonal 2s infinite;
+  -o-animation: diagonal 2s infinite;
+  animation: diagonal 2s infinite;
 }
 
-nav>ul>li>a {
-  padding: 0 10px;
-  text-transform: uppercase;
-  font-weight: 500;
-  color: #EAEAEA;
-  background-color: #0F051C;
-  text-decoration: none;
+@-webkit-keyframes diagonal {
+    0%       { transform: translatex(0px) translatey(0px) }
+    50%      { transform: translatex(20px) translatey(20px); }
+    100%     { transform: translatex(0px) translatey(0px) }
 }
 
-nav>ul>li>a:visited {
-  color: #EAEAEA;
-  background-color: #0F051C;
-  text-decoration: none;
+@-moz-keyframes diagonal {
+    0%       { transform: translatex(0px) translatey(0px) }
+    50%      { transform: translatex(20px) translatey(20px); }
+    100%     { transform: translatex(0px) translatey(0px) }
 }
 
-nav>ul>li>a:hover nav>ul>li>a:focus {
-  color: #7500CF;
-  font-weight: 700;
-  background-color: #0F051C;
-  text-decoration: underline;
+@-o-keyframes diagonal {
+    0%       { transform: translatex(0px) translatey(0px) }
+    50%      { transform: translatex(20px) translatey(20px); }
+    100%     { transform: translatex(0px) translatey(0px) }
 }
 
-nav>ul>li>a:active {
-  color: #490082;
-  background-color: #0F051C;
-  text-decoration: none;
+@keyframes diagonal {
+    0%       { transform: translatex(0px) translatey(0px) }
+    50%      { transform: translatex(20px) translatey(20px); }
+    100%     { transform: translatex(0px) translatey(0px) }
 }
 
 .social-icons {
@@ -321,64 +367,6 @@ nav>ul>li>a:active {
 
 .project-covers {
   max-width: 75%;
-}
-
-.highlight-blue {
-  background-color: blue;
-}
-
-.highlight-green {
-  background-color: green;
-}
-
-.highlight-red {
-  background-color: red;
-}
-
-.sun {
-  animation: 4s color-change infinite alternate linear;
-}
-
-.cloud-front {
-  animation: 30s cloud-move infinite alternate linear;
-}
-
-.cloud-back {
-  animation: 34s cloud-move-reverse infinite alternate linear;
-}
-
-@keyframes color-change {
-  0% {
-    fill: #edc655;
-  }
-
-  50% {
-    fill: #fcffad;
-  }
-
-  100% {
-    fill: #f76414;
-  }
-}
-
-@keyframes cloud-move {
-  from {
-    transform: translate(0, -8px);
-  }
-
-  to {
-    transform: translate(200px, 8px);
-  }
-}
-
-@keyframes cloud-move-reverse {
-  from {
-    transform: translate(446px, 48px);
-  }
-
-  to {
-    transform: translate(100px, 48px);
-  }
 }
 
 /* ==============================
@@ -424,6 +412,10 @@ Medium devices (640px and larger)
     background-color: #7500CF;
   }
 
+  nav>ul {
+    margin: 1em 0;
+  }
+
   nav>ul>li {
     display: inline-block;
   }
@@ -433,9 +425,57 @@ Medium devices (640px and larger)
   }
 
   .navtoggle li:last-child {
-  display: none;
+    display: none;
+  }
+
+  .navtoggle.responsive nav {
+    padding: 0;
+  }
+
+  .navtoggle.responsive li {
+    border-top: none;
+    padding: 0;
+  }
+
+  .navtoggle li .icon {
+    font-size: 17px;
+  }
+
+  .logo {
+    max-width: 200px;
+  }
+
+.logo-animation {
+  position: relative;
+  -webkit-animation: diagonal 2s infinite;
+  -moz-animation: diagonal 2s infinite;
+  -o-animation: diagonal 2s infinite;
+  animation: diagonal 2s infinite;
 }
 
+  @-webkit-keyframes diagonal {
+      0%       { transform: translatex(30px) translatey(30px) }
+      50%      { transform: translatex(90px) translatey(90px); }
+      100%     { transform: translatex(30px) translatey(30px)}
+  }
+
+  @-moz-keyframes diagonal {
+      0%       { transform: translatex(30px) translatey(30px) }
+      50%      { transform: translatex(90px) translatey(90px); }
+      100%     { transform: translatex(30px) translatey(30px)}
+  }
+
+  @-o-keyframes diagonal {
+      0%       { transform: translatex(30px) translatey(30px) }
+      50%      { transform: translatex(90px) translatey(90px); }
+      100%     { transform: translatex(30px) translatey(30px)}
+  }
+
+  @keyframes diagonal {
+      0%       { transform: translatex(30px) translatey(30px) }
+      50%      { transform: translatex(90px) translatey(90px); }
+      100%     { transform: translatex(30px) translatey(30px)}
+  }
 }
 
 /* ==============================
