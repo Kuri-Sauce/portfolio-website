@@ -334,6 +334,7 @@ justify-content: space-around;
 
 .logo {
   max-width: 150px;
+  max-height: 48px;
 }
 
 .hero-animation-stage {
@@ -367,8 +368,23 @@ width: 100%;
    100% { transform: translateX(0%); }
 }
 
-.social-icons {
-  max-width: 100px;
+#social-icon-flex {
+    display: flex;
+  position: sticky;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  flex-direction: row;
+
+}
+.social-icon {
+  position: relative;
+  min-width: 48px;
+  min-height: 48px;
+  max-width: 96px;
+  max-height: 96px;
+  padding-left: 8px;
+  padding-right: 8px;
 }
 
 .project-covers {
