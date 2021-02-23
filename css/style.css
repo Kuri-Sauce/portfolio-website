@@ -20,6 +20,7 @@ header {
   box-shadow: 0px 4px 5px 0px rgba(73, 0, 130, 0.70);
   position: fixed;
   width: 100%;
+  z-index: 1;
 }
 
 main {
@@ -146,9 +147,9 @@ a:active {
   text-decoration: none;
 }
 
+/*Why is #myNavtoggle  here? I am not sure what purpose this currently serves.*/
 #myNavtoggle {}
 
-/*Why is this here? I am not sure what purpose this currently serves.*/
 .navtoggle li:not(:last-child) {
   display: none;
 }
@@ -255,6 +256,13 @@ nav>ul>li>a:active {
   position: static;
 }
 
+#tastyvegan-main {
+display: flex;
+justify-content: space-around;
+  max-width: 90%;
+  margin: 48px auto;
+}
+
 .section-light-background {
   background-color: rgba(255, 255, 255, 0.87);
   color: black;
@@ -328,37 +336,35 @@ nav>ul>li>a:active {
   max-width: 150px;
 }
 
-.logo-animation {
+.hero-animation-stage {
+display: flex;
+height: 100%;
+width: 100%;
+}
+
+.hero-animation {
+  align-self: flex-end;
   max-width: 160px;
   position: relative;
-  -webkit-animation: diagonal 2s infinite;
-  -moz-animation: diagonal 2s infinite;
-  -o-animation: diagonal 2s infinite;
-  animation: diagonal 2s infinite;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  transform-origin: bottom;
+  margin: 0 auto 0 auto;
 }
 
-@-webkit-keyframes diagonal {
-    0%       { transform: translatex(0px) translatey(0px) }
-    50%      { transform: translatex(20px) translatey(20px); }
-    100%     { transform: translatex(0px) translatey(0px) }
+.wobble {
+  animation-name: wobble;
+  animation-timing-function: ease;
 }
 
-@-moz-keyframes diagonal {
-    0%       { transform: translatex(0px) translatey(0px) }
-    50%      { transform: translatex(20px) translatey(20px); }
-    100%     { transform: translatex(0px) translatey(0px) }
-}
-
-@-o-keyframes diagonal {
-    0%       { transform: translatex(0px) translatey(0px) }
-    50%      { transform: translatex(20px) translatey(20px); }
-    100%     { transform: translatex(0px) translatey(0px) }
-}
-
-@keyframes diagonal {
-    0%       { transform: translatex(0px) translatey(0px) }
-    50%      { transform: translatex(20px) translatey(20px); }
-    100%     { transform: translatex(0px) translatey(0px) }
+@keyframes wobble {
+   0% { transform: translateX(0%); }
+   10% { transform: translateX(-5%) rotate(-20deg); }
+   30% { transform: translateX(5%) rotate(10deg); }
+   45% { transform: translateX(-3%) rotate(-5deg); }
+   60% { transform: translateX(2%) rotate(3deg); }
+   75% { transform: translateX(-1%) rotate(-2deg); }
+   100% { transform: translateX(0%); }
 }
 
 .social-icons {
@@ -388,94 +394,95 @@ Medium devices (640px and larger)
     margin-top: 4px;
   }
 
+    nav>ul {
+      margin: 1em 0;
+    }
+
+    nav>ul>li {
+      display: inline-block;
+    }
+
+    .navtoggle li:not(:last-child) {
+      display: inline-block;
+    }
+
+    .navtoggle li:last-child {
+      display: none;
+    }
+
+    .navtoggle.responsive nav {
+      padding: 0;
+    }
+
+    .navtoggle.responsive li {
+      border-top: none;
+      padding: 0;
+    }
+
+    .navtoggle li .icon {
+      font-size: 17px;
+    }
+
   #hero {
     margin-top: 96px;
   }
 
-  h1 {
-    font-size: 4em;
-  }
+    #hero-animation {
+      background-color: #7500CF;
+    }
 
   #hero span {
     display: block;
   }
 
-  [class*="col-"] {
-    float: left;
-  }
-
-  .col-md-6 {
-    width: 50%;
-  }
-
-  #hero-animation {
-    background-color: #7500CF;
-  }
-
-  nav>ul {
-    margin: 1em 0;
-  }
-
-  nav>ul>li {
-    display: inline-block;
-  }
-
-  .navtoggle li:not(:last-child) {
-    display: inline-block;
-  }
-
-  .navtoggle li:last-child {
-    display: none;
-  }
-
-  .navtoggle.responsive nav {
-    padding: 0;
-  }
-
-  .navtoggle.responsive li {
-    border-top: none;
-    padding: 0;
-  }
-
-  .navtoggle li .icon {
-    font-size: 17px;
-  }
+    h1 {
+      font-size: 4em;
+    }
 
   .logo {
     max-width: 200px;
   }
 
-.logo-animation {
-  position: relative;
-  -webkit-animation: diagonal 2s infinite;
-  -moz-animation: diagonal 2s infinite;
-  -o-animation: diagonal 2s infinite;
-  animation: diagonal 2s infinite;
-}
-
-  @-webkit-keyframes diagonal {
-      0%       { transform: translatex(30px) translatey(30px) }
-      50%      { transform: translatex(90px) translatey(90px); }
-      100%     { transform: translatex(30px) translatey(30px)}
+  .hero-animation-stage {
+  display: flex;
+  justify-content: space-around;
+  align-items: baseline;
+  height: 100%;
+  width: 100%;
   }
 
-  @-moz-keyframes diagonal {
-      0%       { transform: translatex(30px) translatey(30px) }
-      50%      { transform: translatex(90px) translatey(90px); }
-      100%     { transform: translatex(30px) translatey(30px)}
+  .hero-animation {
+    align-self: flex-end;
+    max-width: 160px;
+    position: relative;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    transform-origin: bottom;
+    margin: 0 auto 0 auto;
   }
 
-  @-o-keyframes diagonal {
-      0%       { transform: translatex(30px) translatey(30px) }
-      50%      { transform: translatex(90px) translatey(90px); }
-      100%     { transform: translatex(30px) translatey(30px)}
+  .bounce {
+    animation-name: bounce;
+    animation-timing-function: ease;
   }
 
-  @keyframes diagonal {
-      0%       { transform: translatex(30px) translatey(30px) }
-      50%      { transform: translatex(90px) translatey(90px); }
-      100%     { transform: translatex(30px) translatey(30px)}
-  }
+  @keyframes bounce {
+          0%   { transform: scale(1,1)      translateY(0); }
+          10%  { transform: scale(1.1,.9)   translateY(0); }
+          30%  { transform: scale(.9,1.1)   translateY(-100px); }
+          50%  { transform: scale(1.05,.95) translateY(0); }
+          57%  { transform: scale(1,1)      translateY(-7px); }
+          64%  { transform: scale(1,1)      translateY(0); }
+          100% { transform: scale(1,1)      translateY(0); }
+      }
+
+    [class*="col-"] {
+      float: left;
+    }
+
+    .col-md-6 {
+      width: 50%;
+    }
 }
 
 /* ==============================
