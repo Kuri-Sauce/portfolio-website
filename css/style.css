@@ -489,7 +489,7 @@ Medium devices (640px and larger)
   .hero-animation {
     max-width: 160px;
     position: relative;
-    animation-duration: 3s;
+    animation-duration: 2s;
     animation-iteration-count: infinite;
     transform-origin: bottom;
     margin: 0 auto 0 auto;
@@ -498,6 +498,11 @@ Medium devices (640px and larger)
   .bounce {
     animation-name: bounce;
     animation-timing-function: ease;
+  }
+
+  .hero-animation:hover {
+    animation-name: wobble;
+    animation-iteration-count: 1;
   }
 
   @keyframes bounce {
@@ -510,7 +515,7 @@ Medium devices (640px and larger)
     }
 
     30% {
-      transform: scale(.9, 1.1) translateY(-100px);
+      transform: scale(.9, 1.1) translateY(-75px);
     }
 
     50% {
