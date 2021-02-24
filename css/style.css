@@ -163,7 +163,7 @@ a:active {
 .navtoggle li .icon {
   position: absolute;
   right: 0;
-  top: 2px;
+  top: 6px;
   font-size: 20px;
   padding: 0;
 }
@@ -492,7 +492,7 @@ Medium devices (640px and larger)
 
   .hero-animation-stage {
     display: block;
-    padding-top: 86px;
+    padding-top: 120px;
     height: 100%;
   }
 
