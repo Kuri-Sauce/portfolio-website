@@ -65,6 +65,7 @@ h4 {
 
 img {
   width: 100%;
+  border-radius: 8px;
 }
 
 a {
@@ -97,7 +98,7 @@ a:active {
   color: #EAEAEA;
   font-weight: 400;
   padding: 10px 20px;
-  border-radius: 3px;
+  border-radius: 8px;
   border: 4px solid #490082;
   transition: 0.2s opacity;
   text-decoration: none;
@@ -217,6 +218,21 @@ nav>ul>li>a:active {
 }
 
 #watchguide-main {
+  display: flex;
+  justify-content: space-around;
+  max-width: 90%;
+  margin: 48px auto;
+}
+
+
+#tastyvegan-main {
+  display: flex;
+  justify-content: space-around;
+  max-width: 90%;
+  margin: 48px auto;
+}
+
+#watchguide-copy-main{
   background-color: #333333;
   font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 16px;
@@ -227,7 +243,7 @@ nav>ul>li>a:active {
   margin: 48px auto;
 }
 
-#watchguide-main h1 {
+#watchguide-copy-main h1 {
   background-color: #333333;
   font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 3em;
@@ -237,7 +253,7 @@ nav>ul>li>a:active {
   padding: 16px;
 }
 
-#watchguide-main h2 {
+#watchguide-copy-main h2 {
   background-color: #333333;
   font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 1.5em;
@@ -246,23 +262,17 @@ nav>ul>li>a:active {
   color: #E2AB41;
 }
 
-#watchguide-main h3 {
+#watchguide-copy-main h3 {
   background-color: #333333;
   color: #ffffff;
   font-size: 1.25em;
 }
 
-#watchguide-palette {
+#watchguide-copy-palette {
   max-width: 458px;
   position: static;
 }
 
-#tastyvegan-main {
-  display: flex;
-  justify-content: space-around;
-  max-width: 90%;
-  margin: 48px auto;
-}
 
 .section-light-background {
   background-color: rgba(255, 255, 255, 0.87);
@@ -490,19 +500,19 @@ Medium devices (640px and larger)
     max-width: 160px;
     position: relative;
     animation-duration: 2s;
-    animation-iteration-count: infinite;
+    animation-iteration-count: 1;
     transform-origin: bottom;
-    margin: 0 auto 0 auto;
-  }
-
-  .bounce {
-    animation-name: bounce;
-    animation-timing-function: ease;
+    margin: 0 auto 0 0;
   }
 
   .hero-animation:hover {
     animation-name: wobble;
     animation-iteration-count: 1;
+  }
+
+  .bounce {
+    animation-name: bounce;
+    animation-timing-function: ease;
   }
 
   @keyframes bounce {
