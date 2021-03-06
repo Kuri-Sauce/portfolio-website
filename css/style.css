@@ -149,9 +149,6 @@ a:active {
   text-decoration: none;
 }
 
-/*Why is #myNavtoggle  here? I am not sure what purpose this currently serves.*/
-#myNavtoggle {}
-
 .navtoggle li:not(:last-child) {
   display: none;
 }
@@ -224,7 +221,6 @@ nav>ul>li>a:active {
   margin: 48px auto;
 }
 
-
 #tastyvegan-main {
   display: flex;
   justify-content: space-around;
@@ -232,18 +228,18 @@ nav>ul>li>a:active {
   margin: 48px auto;
 }
 
-#watchguide-copy-main{
+#watchguide-main {
   background-color: #333333;
   font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 16px;
   font-weight: 400;
   letter-spacing: 0.5px;
-  color: Black;
+  color: #E4E4E4;
   max-width: 90%;
   margin: 48px auto;
 }
 
-#watchguide-copy-main h1 {
+#watchguide-main h1 {
   background-color: #333333;
   font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 3em;
@@ -253,7 +249,7 @@ nav>ul>li>a:active {
   padding: 16px;
 }
 
-#watchguide-copy-main h2 {
+#watchguide-main h2 {
   background-color: #333333;
   font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 1.5em;
@@ -262,22 +258,87 @@ nav>ul>li>a:active {
   color: #E2AB41;
 }
 
-#watchguide-copy-main h3 {
+#watchguide-main h3 {
   background-color: #333333;
   color: #ffffff;
   font-size: 1.25em;
 }
 
-#watchguide-copy-palette {
+#watchguide-palette {
   max-width: 458px;
   position: static;
 }
 
+.wgflow {}
+
+.wg-tvcouch {
+  position: relative;
+  border-radius: 74px;
+  max-width: 100%;
+  margin: 16px;
+}
+
+.mandocheck {
+  max-width: 136px;
+}
+
+.wg-figma-img {
+  max-width: 212px;
+}
+
+.wg-navicon {
+  min-width: 306px;
+}
+
+.wgthumb {
+  max-height: 56px;
+}
 
 .section-light-background {
+  position: relative;
   background-color: rgba(255, 255, 255, 0.87);
   color: black;
-  padding: 10px;
+  padding: 10px 0;
+}
+
+.container80 {
+  position: relative;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.right-img {
+  position: relative;
+  left: 20%;
+}
+
+.leftfloat {
+  float: left;
+}
+
+.right-tab {
+  position: relative;
+  border-radius: 4px 0px 0px 4px;
+  max-width: 80%;
+  right: 0px;
+  overflow: hidden;
+  float: right;
+}
+
+.left-img {
+  max-width: 80%;
+  overflow: hidden;
+}
+
+.rightfloat {
+  float: right;
+}
+
+.left-tab {
+  position: inherit;
+  border-radius: 0px 4px 4px 0px;
+  max-width: 80%;
+  left: 0px;
 }
 
 /* Layout styling */
@@ -432,7 +493,7 @@ Medium devices (640px and larger)
   }
 
   #myNavtoggle {
-    min-width: 641px
+    min-width: 641px;
   }
 
   nav {

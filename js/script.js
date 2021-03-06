@@ -7,6 +7,7 @@ var personParent = {
   age: age,
 }
 
+console.log(personParent, "WatchGuide and Tasty Vegan are currently under construction. In the meantime, please enjoy the jpg version of my case studies.");
 console.log(personParent, "I enjoy binge watching my life away whilst eating bon bons.")
 
 function menuToggle() { //What is menuToggle? where is this coming from? is this coming from jQuery?//
