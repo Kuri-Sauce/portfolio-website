@@ -65,7 +65,6 @@ h4 {
 
 img {
   width: 100%;
-  border-radius: 8px;
 }
 
 a {
@@ -256,20 +255,93 @@ nav>ul>li>a:active {
   font-weight: 700;
   letter-spacing: 0.37px;
   color: #E2AB41;
+  margin-bottom: 12px;
 }
 
 #watchguide-main h3 {
   background-color: #333333;
   color: #ffffff;
   font-size: 1.25em;
+  margin-bottom: 0;
 }
 
-#watchguide-palette {
-  max-width: 458px;
-  position: static;
+#watchguide-main p {
+  margin: 0;
 }
 
-.wgflow {}
+.watchguide-img200w {
+  max-width: 200px;
+  margin-top: 20px;
+  width: auto;
+}
+
+.watchguide-img250w {
+  max-width: 250px;
+  margin-top: 20px;
+}
+
+.watchguide-img500w {
+  max-width: 500px;
+  margin-top: 20px;
+}
+
+#watchguide-main ul {}
+
+.watchguide-logo {
+  font-size: 32px;
+  color: #E2AB41;
+  font-weight: 700;
+  letter-spacing: 0.37px;
+}
+
+#watchguide-opportun {
+
+}
+
+#wgimg-sync {
+  padding: 40px 0 0 65px;
+}
+
+.wgopportun {
+  position: relative;
+  margin-top: 10px;
+}
+
+.wgopportun-logo {
+position: absolute;
+}
+
+.wgopportun-title {
+  padding-right: 31%;
+  top: 0;
+  text-align: right;
+}
+
+.wgcontainer {
+  padding: 15px;
+}
+
+.wg-row {
+  margin: 10px 0;
+}
+
+.wgflow {
+  position: relative;
+}
+
+.wgflowtabs {
+  position: absolute;
+  top: 12%;
+  width: 100%;
+}
+
+.wgflowtab1 {
+  padding-bottom: 4%;
+}
+
+.wgflowtab2 {
+  padding-top: 0%;
+}
 
 .wg-tvcouch {
   position: relative;
@@ -287,7 +359,7 @@ nav>ul>li>a:active {
 }
 
 .wg-navicon {
-  min-width: 306px;
+  min-width: 250px;
 }
 
 .wgthumb {
@@ -296,49 +368,31 @@ nav>ul>li>a:active {
 
 .section-light-background {
   position: relative;
-  background-color: rgba(255, 255, 255, 0.87);
+  background-color: #E4E4E4;
   color: black;
   padding: 10px 0;
 }
 
-.container80 {
-  position: relative;
-  max-width: 100%;
-  max-height: 100%;
+.container80-right {
+  padding-left: 20%;
+  margin-bottom: 20px;
 }
 
-.right-img {
-  position: relative;
-  left: 20%;
+.container80-left {
+  padding-right: 20%;
+  margin-bottom: 20px;
 }
 
-.leftfloat {
-  float: left;
+.align-right {
+  text-align: right;
 }
 
 .right-tab {
-  position: relative;
   border-radius: 4px 0px 0px 4px;
-  max-width: 80%;
-  right: 0px;
-  overflow: hidden;
-  float: right;
-}
-
-.left-img {
-  max-width: 80%;
-  overflow: hidden;
-}
-
-.rightfloat {
-  float: right;
 }
 
 .left-tab {
-  position: inherit;
   border-radius: 0px 4px 4px 0px;
-  max-width: 80%;
-  left: 0px;
 }
 
 /* Layout styling */
@@ -614,6 +668,27 @@ Medium devices (640px and larger)
 
   .col-md-6 {
     width: 50%;
+  }
+
+  .wgflow {
+    margin-top: 10px;
+  }
+
+  .wgflowtabs {
+    position: absolute;
+    top: 20px;
+    width: 100%;
+  }
+
+  .wgflowtab1 {
+    padding-right: 66%;
+    padding-bottom: 0;
+  }
+
+  .wgflowtab2 {
+    position: absolute;
+    top: 0;
+    padding-left: 66%;
   }
 }
 
