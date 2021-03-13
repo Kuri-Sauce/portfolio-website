@@ -269,6 +269,12 @@ nav>ul>li>a:active {
   margin: 0;
 }
 
+.watchguide-img150w {
+  max-width: 150px;
+  margin-top: 20px;
+  width: auto;
+}
+
 .watchguide-img200w {
   max-width: 200px;
   margin-top: 20px;
@@ -277,12 +283,21 @@ nav>ul>li>a:active {
 
 .watchguide-img250w {
   max-width: 250px;
-  margin-top: 20px;
 }
 
 .watchguide-img500w {
   max-width: 500px;
-  margin-top: 20px;
+  margin: 20px 5%;
+}
+
+.watchguide-img750w {
+  max-width: 740px;
+  margin: 20px 5%;
+}
+
+.watchguide-img750up {
+  max-width: 100%;
+  margin: 20px 5%;
 }
 
 #watchguide-main ul {}
@@ -317,15 +332,12 @@ position: absolute;
   text-align: right;
 }
 
-.wgcontainer {
-  padding: 15px;
-}
+  .opplayout {
+    max-width: 250px;
+    text-align: center;
+  }
 
-.wg-row {
-  margin: 10px 0;
-}
-
-.wgflow {
+  .wgflow {
   position: relative;
 }
 
@@ -343,6 +355,14 @@ position: absolute;
   padding-top: 0%;
 }
 
+.wgcontainer {
+  padding: 15px;
+}
+
+.wg-row {
+  margin: 10px 0;
+}
+
 .wg-tvcouch {
   position: relative;
   border-radius: 74px;
@@ -350,16 +370,34 @@ position: absolute;
   margin: 16px;
 }
 
+.wg-goldglow {
+  position: relative;
+  height: inherit;
+}
+
+.goldglowcontainer {
+  position: absolute;
+}
+
+.wgglow {
+  margin-bottom: -8px;
+}
+
+.glowtab {
+  position: absolute;
+  top: -72px;
+}
+
 .mandocheck {
   max-width: 136px;
 }
 
 .wg-figma-img {
-  max-width: 212px;
+  max-width: 250px;
 }
 
 .wg-navicon {
-  min-width: 250px;
+  min-width: 200px;
 }
 
 .wgthumb {
@@ -458,6 +496,10 @@ position: absolute;
   width: 100%;
 }
 
+.col-sm-popup-12 {
+  width: 250px;
+}
+
 .logo {
   max-width: 150px;
   max-height: 48px;
@@ -535,6 +577,27 @@ position: absolute;
 
 .project-covers {
   max-width: 75%;
+}
+
+/* ==============================
+Sm/Md devices (430px and larger)
+================================= */
+@media only screen and (min-width: 430px) {
+
+  [class*="col-"] {
+    float: left;
+    padding-left: 0;
+    padding-right: 16px;
+  }
+
+  .col-smd-6 {
+    width: 50%;
+  }
+
+.col-smdtext-6 {
+  padding-top: 25%;
+}
+
 }
 
 /* ==============================
@@ -671,6 +734,7 @@ Medium devices (640px and larger)
   }
 
   .wgflow {
+    position: relative;
     margin-top: 10px;
   }
 
@@ -689,6 +753,10 @@ Medium devices (640px and larger)
     position: absolute;
     top: 0;
     padding-left: 66%;
+  }
+
+  .wg-figma-img {
+    max-width: 500px;
   }
 }
 
