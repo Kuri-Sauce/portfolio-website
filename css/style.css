@@ -220,7 +220,7 @@ nav>ul>li>a:active {
   margin: 48px auto;
 }
 
-#tastyvegan-main {
+#tastyvegan-mainOLD {
   display: flex;
   justify-content: space-around;
   max-width: 90%;
@@ -331,11 +331,6 @@ nav>ul>li>a:active {
   text-align: right;
 }
 
-.opplayout {
-  max-width: 250px;
-  text-align: center;
-}
-
 .wgflow {
   position: relative;
 }
@@ -403,6 +398,18 @@ nav>ul>li>a:active {
   max-height: 56px;
 }
 
+.swot-wg-container {
+  max-width: 370px;
+  margin: 0 auto;
+  padding-top: 12px;
+  padding-bottom: 24px;
+}
+
+.swot-wg-cast-img {
+  max-width: 100%;
+
+}
+
 .section-light-background {
   position: relative;
   background-color: #E4E4E4;
@@ -453,7 +460,7 @@ nav>ul>li>a:active {
   margin: 48px auto;
 }
 
-#tastyvegan-mainDEV {
+#tastyvegan-main {
   background-color: #FAF8F5;
   font-family: 'Noto Sans KR', sans-serif;
   font-size: 16px;
@@ -466,13 +473,13 @@ nav>ul>li>a:active {
   margin: 0 auto;
 }
 
-#tastyvegan-mainDEV h2 {
+#tastyvegan-main h2 {
   font-family: 'Noto Sans KR', sans-serif;
   font-size: 36px;
   line-height: 57.13px;
 }
 
-#tastyvegan-mainDEV h3 {
+#tastyvegan-main h3 {
   font-family: 'Noto Sans KR', sans-serif;
   font-size: 24px;
   font-weight: 500;
@@ -480,14 +487,14 @@ nav>ul>li>a:active {
   margin-bottom: 4px;
 }
 
-#tastyvegan-mainDEV h4 {
+#tastyvegan-main h4 {
   font-family: 'Noto Sans KR', sans-serif;
   font-size: 20px;
   font-weight: 500;
   line-height: 31.74px;
 }
 
-#tastyvegan-mainDEV h5 {
+#tastyvegan-main h5 {
   font-family: 'Noto Sans KR', sans-serif;
   font-size: 2em;
   font-weight: 700;
@@ -497,7 +504,7 @@ nav>ul>li>a:active {
   margin-bottom: 8px;
 }
 
-#tastyvegan-mainDEV h6 {
+#tastyvegan-main h6 {
   font-family: 'Noto Sans KR', sans-serif;
   font-size: 24px;
   font-weight: 400;
@@ -507,11 +514,11 @@ nav>ul>li>a:active {
   margin-bottom: 8px;
 }
 
-#tastyvegan-mainDEV p {
+#tastyvegan-main p {
   margin-top: 2px;
 }
 
-#tastyvegan-mainDEV img {
+#tastyvegan-main img {
   width: 100%;
   border-radius: 4px;
   margin-bottom: 16px;
@@ -727,19 +734,7 @@ nav>ul>li>a:active {
 Sm/Md devices (430px and larger)
 ================================= */
 @media only screen and (min-width: 430px) {
-  [class*="col-"] {
-    float: left;
-    padding-left: 0;
-    padding-right: 16px;
-  }
 
-  .col-smd-6 {
-    width: 50%;
-  }
-
-  .col-smdtext-6 {
-    padding-top: 25%;
-  }
 
   #tv-logo-imgs {
     max-width: 600px;
