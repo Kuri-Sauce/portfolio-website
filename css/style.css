@@ -234,8 +234,9 @@ nav>ul>li>a:active {
   font-weight: 400;
   letter-spacing: 0.5px;
   color: #E4E4E4;
-  max-width: 90%;
-  margin: 48px auto;
+  max-width: 1000px;
+  margin: 0 auto;
+  border-radius: 8px;
 }
 
 #watchguide-main h1 {
@@ -309,9 +310,7 @@ nav>ul>li>a:active {
   letter-spacing: 0.37px;
 }
 
-#watchguide-opportun {
-
-}
+#watchguide-opportun {}
 
 #wgimg-sync {
   padding: 40px 0 0 65px;
@@ -323,7 +322,7 @@ nav>ul>li>a:active {
 }
 
 .wgopportun-logo {
-position: absolute;
+  position: absolute;
 }
 
 .wgopportun-title {
@@ -332,12 +331,12 @@ position: absolute;
   text-align: right;
 }
 
-  .opplayout {
-    max-width: 250px;
-    text-align: center;
-  }
+.opplayout {
+  max-width: 250px;
+  text-align: center;
+}
 
-  .wgflow {
+.wgflow {
   position: relative;
 }
 
@@ -447,6 +446,151 @@ position: absolute;
   content: "";
   clear: both;
   display: table;
+}
+
+.main-container {
+  max-width: 90%;
+  margin: 48px auto;
+}
+
+#tastyvegan-mainDEV {
+  background-color: #FAF8F5;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  color: #11081D;
+  padding-top: 20px;
+  border-radius: 8px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+#tastyvegan-mainDEV h2 {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 36px;
+  line-height: 57.13px;
+}
+
+#tastyvegan-mainDEV h3 {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 38.09px;
+  margin-bottom: 4px;
+}
+
+#tastyvegan-mainDEV h4 {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 31.74px;
+}
+
+#tastyvegan-mainDEV h5 {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 2em;
+  font-weight: 700;
+  line-height: 50.78px;
+  letter-spacing: 0.15em;
+  margin-top: auto;
+  margin-bottom: 8px;
+}
+
+#tastyvegan-mainDEV h6 {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 38.09px;
+  letter-spacing: 0.5em;
+  margin-top: auto;
+  margin-bottom: 8px;
+}
+
+#tastyvegan-mainDEV p {
+  margin-top: 2px;
+}
+
+#tastyvegan-mainDEV img {
+  width: 100%;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  max-width: 1000px;
+}
+
+.section-margin {
+  margin-bottom: 32px;
+}
+
+.tv-hero-img {
+  max-width: 1000px;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.h2-background {
+  background: linear-gradient(90deg, #E54C2A 0%, rgba(255, 255, 255, 0) 100%);
+  border-radius: 16px 0px 0px 0px;
+}
+
+.persona-img {
+  max-width: 676px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.tv-tech-img {
+  max-width: 412px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.tv-mvp-features {
+  max-width: 720px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.tv-userstory {
+  background: #D4E8D1;
+  border-radius: 8px 8px 0px 0px;
+}
+
+.tv-requirements {
+  background: rgba(242, 179, 164, 0.4);
+  border-radius: 8px 8px 0px 0px;
+  text-align: right;
+}
+
+.tv-userfeed {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.tv-type-container {
+  word-wrap: break-word;
+  margin-left: 5%;
+  margin-right: 5%;
+  max-width: 625px;
+}
+
+.tv-type2 {
+  display: flex;
+  justify-content: flex-end;
+  overflow-wrap: anywhere;
+}
+
+#tv-logo-imgs {
+  max-width: 152px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 5%;
+}
+
+.tv-imgs800 {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #hero {
@@ -583,7 +727,6 @@ position: absolute;
 Sm/Md devices (430px and larger)
 ================================= */
 @media only screen and (min-width: 430px) {
-
   [class*="col-"] {
     float: left;
     padding-left: 0;
@@ -594,10 +737,16 @@ Sm/Md devices (430px and larger)
     width: 50%;
   }
 
-.col-smdtext-6 {
-  padding-top: 25%;
-}
+  .col-smdtext-6 {
+    padding-top: 25%;
+  }
 
+  #tv-logo-imgs {
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 5%;
+  }
 }
 
 /* ==============================
@@ -757,6 +906,12 @@ Medium devices (640px and larger)
 
   .wg-figma-img {
     max-width: 500px;
+  }
+
+  .tv-type-container {
+    word-wrap: break-word;
+    margin-left: 10%;
+    margin-right: 10%;
   }
 }
 
